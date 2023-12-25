@@ -1,0 +1,505 @@
+/* Universal */
+* {
+    margin: 0px;
+    font-family:"Century Gothic";
+}
+
+/* default color for a tags */
+a {
+    color:slateblue;
+}
+
+/* Image div */
+.front-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* DEFAULT */
+
+/* In this section is the navbar classes */
+
+/* Main navbar */
+nav {
+    background-color: black;
+    color:silver;
+    padding: 5px;
+    display: column;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* Navbar Title */
+.navbar-title {
+    background-color: black;
+    color:silver;
+    font-family:'Franklin Gothic Medium';
+}
+
+/* Navbar list */
+.navbar {
+    background-color: black;
+    color:silver;
+    font-family:"Century Gothic";
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+/* Navbar individual lise */
+.navbar-item {
+    background-color: black;
+    color:silver;
+    font-family:"Century Gothic";
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+/* username shows up in the navbar if you are logged in */
+.username {
+    color: cadetblue;
+}
+
+/* In this section is the background decoration */
+
+/* Background grid system */
+.background {
+    z-index: -1;
+    display: grid;
+    grid-template-columns: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
+    grid-template-rows: 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw 12.5vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+/* gray tile */
+.background-tile {
+    background-color: gray;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: darkslategray;
+}
+
+/* dark gray tile */
+.background-tile-2 {
+    background-color: dimgray;
+    border-style: dashed;
+    border-width: 1px;
+    border-color: darkgray;
+}
+
+/* Intro in the landing site where it has a large picture and text */
+
+/* Intro div itself */
+.intro {
+    position: relative;
+}
+
+/* The huge text */
+.huge-text {
+    font-family:Impact;
+    font-size: 36pt;
+    color: goldenrod;
+    text-shadow: 2px 2px black;
+    z-index: 1;
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+}
+
+/* This is the webpage itself */
+
+/* Webpage setup */
+.webpage {
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* A row of multiple text boxes where depending on the size of
+ the window it is either column or row*/
+.text-row {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* A single box where it has a single image */
+.imagepage {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: white;
+    text-align: center;
+}
+
+/* a box of text inside the a row */
+.textpage-part {
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+/* A single box of text per row */
+.textpage {
+    background-color: white;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Text itself */
+.text {
+    background-color: white;
+}
+
+/* Heading */
+.heading {
+    background-color: silver;
+}
+
+/* Mission Statement Heading */
+.mission-statement {
+    background-color: gold;
+}
+
+/* This is a row for buttons */
+.button-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Normal Button is light blue*/
+.normal-button {
+    background-color: dodgerblue;
+    font-weight: bold;
+    border-style: outset;
+    border-width: 3px;
+    border-color: gray;
+    width: 120px;
+    height: 50px;
+    font-size: 16pt;
+    margin: 5px;
+}
+.normal-button:active {
+    background-color:royalblue;
+    border-style: inset;
+    border-color: black;
+}
+
+/* Subscribe Button is orange*/
+.subscribe-button {
+    background-color: orange;
+    font-weight: bold;
+    border-style: outset;
+    border-width: 3px;
+    border-color: gray;
+    width: 120px;
+    height: 50px;
+    font-size: 16pt;
+    margin: 5px;
+}
+.subscribe-button:active {
+    background-color:chocolate;
+    border-style: inset;
+    border-color: black;
+}
+
+/* Cancel Button is red*/
+.cancel-button {
+    background-color: red;
+    font-weight: bold;
+    border-style: outset;
+    border-width: 3px;
+    border-color: gray;
+    width: 120px;
+    height: 50px;
+    font-size: 16pt;
+    margin: 5px;
+}
+.cancel-button:active {
+    background-color:darkred;
+    border-style: inset;
+    border-color: black;
+}
+
+/* This section is for signing in */
+
+/* a div for signing in */
+.sign-in-page {
+    background-color: white;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* An area where it has the input boxes, and it is designed in a way that
+it can easly get adjusted when the screen changes sizes */
+.write-area {
+    margin: 10px;
+}
+.write-flex {
+    display: flex;
+    flex-direction: column;
+}
+.write-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px;
+}
+.write-sm-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 4px;
+}
+
+/* A input text 200 pixels wide */
+.write-200 {
+    width: 200px;
+    text-align: center;
+    font-size: 11pt;
+    background-color: lightsteelblue;
+}
+
+/* A input text 100 pixels wide */
+.write-100 {
+    width: 100px;
+    text-align: center;
+    font-size: 11pt;
+    background-color: lightsteelblue;
+}
+
+/* This section is for the gallery where it rearranges itself when
+the screen changes sizes*/
+.gallery {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagerow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imagecol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 80%;
+    height: 80%;
+}
+.gallery-image {
+    width: 100%;
+    height: 100%;
+}
+
+/* This is the footer */
+.footer {
+    background-color: black;
+    color:silver;
+    padding: 5px;
+    display: column;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+}
+.footer-list {
+    background-color: black;
+    color:silver;
+    font-family:"Century Gothic";
+    list-style: none;
+}
+.footer-header {
+    background-color: black;
+    color:silver;
+    font-family:"Century Gothic";
+    font-weight: bold;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.footer-item {
+    background-color: black;
+    color:silver;
+    font-family:"Century Gothic";
+    margin-right: 20px;
+    text-decoration: none;
+}
+#footer-icon {
+    background-color: black;
+    color:silver;
+}
+#footer-social-icon {
+    background-color: black;
+    color:dodgerblue;
+}
+.footer-social-list {
+    background-color: black;
+    color:silver;
+    font-family:"Century Gothic";
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.footer-link {
+    background-color: black;
+}
+
+
+/* This is how some thingsget rearranged when the window changes sizes */
+@media only screen and (min-width: 600px) {
+    .imagecol {
+        width: 50%;
+        height: 50%;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    nav {
+        background-color: black;
+        color:silver;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .navbar {
+        background-color: black;
+        color:silver;
+        font-family:"Century Gothic";
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .text-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .button-row {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .write-200 {
+        margin-left: 5px;
+    }
+
+    .write-100 {
+        margin-left: 5px;
+    }
+    
+    .textpage {
+        background-color: white;
+        text-align: center;
+    }
+    
+    .write-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .imagepage {
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .imagerow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagecol {
+        align-items: center;
+        width: 80%;
+        height: 80%;
+    }
+
+    .huge-text {
+        font-size: 48pt;
+        text-shadow: 2px 2px black;
+        position: absolute;
+        top: 40%;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .imagecol {
+        align-items: center;
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .write-flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .write-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    
+    .imagepage {
+        margin-left: 400px;
+        margin-right: 400px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-color: white;
+        text-align: center;
+    }
+
+    .imagerow {
+        justify-content: space-around;
+    }
+
+    .huge-text {
+        font-size: 72pt;
+        text-shadow: 4px 4px black;
+    }
+
+    .gallery {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+
+}
